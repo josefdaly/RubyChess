@@ -16,7 +16,6 @@ class Game
   end
 
   def right_color?(pos)
-
     @board[pos].color == @current_player.color
   end
 
@@ -58,14 +57,11 @@ class Game
       puts "#{@current_player.color.to_s.capitalize} wins!"
     end
   end
-
-
-
 end
 
-if __FILE__ == $PROGRAM_NAME
-  player1 = HumanPlayer.new(:white)
-  player2 = ComputerPlayer.new(:black)
-  game = Game.new(player1, player2)
-  game.play
-end
+# if __FILE__ == $PROGRAM_NAME
+#   player1 = ComputerPlayer.new(:white)
+#   player2 = HumanPlayer.new(:black)
+#   game = Game.new(player1, player2)
+#   game.play
+# end
