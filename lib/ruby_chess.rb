@@ -10,7 +10,8 @@ class RubyChess
     choose_players
     game = Game.new(@white_player, @black_player)
     game.play
-    run if reset == 'y' || reset =='Y' || reset == 'yes' || reset == 'Yes'
+    choice = reset
+    run if choice == 'y' || choice =='Y' || choice == 'yes' || choice == 'Yes'
   end
 
   def choose_players
