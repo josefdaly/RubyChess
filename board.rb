@@ -59,7 +59,6 @@ class Board
   end
 
   def on_board?(pos)
-    # pos.all? { |el| el.between?(0, 7) }
     (pos[0]).between?(0, 7) && (pos[1]).between?(0, 7)
   end
 
@@ -112,7 +111,7 @@ class Board
     self.grid.each_with_index do |row, i|
       print "#{i + 1} "
       row.each_with_index do |space, j|
-        if cursor.nil?                    
+        if cursor.nil?
           if (i + j).odd?
             background = :light_black
           else
@@ -120,13 +119,13 @@ class Board
           end
         else
           if @cursor == [i,j]
-            background = :yellow 
+            background = :yellow
           elsif (i + j).odd?
             background = :light_black
           else
             background = :light_blue
-          end  
-        end        
+          end
+        end
         if space.nil?
           print '  '.colorize(:background => background)
         else
