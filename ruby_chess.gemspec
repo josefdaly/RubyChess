@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["josefdaly@gmail.com"]
   spec.summary       = "Joe's Chess game for ruby"
   spec.description   = "Joe's Chess game for ruby"
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/josefdaly/RubyChess"
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.executables   = ["ruby_chess"]
   spec.require_paths = ["lib"]
