@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require 'ruby_chess'
-t = RubyChess.new
-t.run
